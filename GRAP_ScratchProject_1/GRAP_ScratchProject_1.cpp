@@ -78,10 +78,9 @@ int main(void)
     const std::chrono::nanoseconds timestep(1600000);
 
     // For spawn timing
-    float spawnInterval = 0.5f; // seconds
+    float spawnInterval = 0.5f; 
     float spawnTimer = 0.0f;
 
-    // Main loop
     while (!glfwWindowShouldClose(window))
     {
         curr_time = clock::now();
@@ -112,8 +111,7 @@ int main(void)
         }
 
 
-
-        // Physics update (not really needed for this test)
+        //Physics Update
         if (curr_ns >= timestep) {
             auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(curr_ns);
             curr_ns = std::chrono::nanoseconds(0);
@@ -121,7 +119,7 @@ int main(void)
             world.Update(dt);
         }
 
-        // Remove dead particles (if you want to test lifespan)
+        // Remove dead particles 
         for (size_t i = 0; i < particles.size();) {
             if (particles[i]->IsDestroyed()) {
                 delete renderParticles[i];
@@ -149,8 +147,8 @@ int main(void)
         glfwPollEvents();
     }
 
-    for (auto* rp : renderParticles) delete rp;
-    for (auto* p : particles) delete p;
+    for (Physics::RenderParticle* rp : renderParticles) delete rp;
+    for (Physics::Particle* p : particles) delete p;
     delete sphereModel;
     glDeleteBuffers(1, &vbo);
     glDeleteBuffers(1, &ebo);
