@@ -70,10 +70,10 @@ public:
     void Draw(GLuint shaderProgram, float scale, float x_rot)
     {
         // Debug log
-        std::cout << "[ModelLoader::Draw] Position: ("
+        /*std::cout << "[ModelLoader::Draw] Position: ("
             << Position.x << ", " << Position.y << ", " << Position.z << ") "
             << "Color: (" << Color.r << ", " << Color.g << ", " << Color.b << ") "
-            << "Scale: " << scale << " x_rot: " << x_rot << std::endl;
+            << "Scale: " << scale << " x_rot: " << x_rot << std::endl;*/
 
         glm::mat4 transform = glm::mat4(1.0f);
         transform = glm::translate(transform, Position);
