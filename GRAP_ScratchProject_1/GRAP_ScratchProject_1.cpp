@@ -111,7 +111,7 @@ int main(void)
     float farPlane = 5000.0f;
 
     perspectiveCamera = new PerspectiveCamera(fov, aspect, nearPlane, farPlane);
-    orthoCamera = new OrthoCamera(width, height);
+    orthoCamera = new OrthoCamera(width, height, nearPlane, 10000);
 
 
     x_cam = 0.0f;
@@ -158,7 +158,7 @@ int main(void)
     float spawnTimer = 0.0f;
 
 	// Number of particles to spawn 
-    int particleSpawnCount = 100;
+    int particleSpawnCount = 1000;
 
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -279,8 +279,8 @@ int main(void)
     for (Physics::RenderParticle* rp : renderParticles) delete rp;
     for (Physics::Particle* p : particles) delete p;
     delete sphereModel;
-    delete perspectiveCamera;
-    delete orthoCamera;
+    //delete perspectiveCamera;
+    //delete orthoCamera;
 
     glDeleteBuffers(1, &vbo);
     glDeleteBuffers(1, &ebo);
