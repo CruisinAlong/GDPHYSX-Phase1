@@ -282,8 +282,8 @@ int main(void)
     for (Physics::RenderParticle* rp : renderParticles) delete rp;
     for (Physics::Particle* p : particles) delete p;
     delete sphereModel;
-    //delete perspectiveCamera;
-    //delete orthoCamera;
+    delete perspectiveCamera;
+    delete orthoCamera;
 
     glDeleteBuffers(1, &vbo);
     glDeleteBuffers(1, &ebo);
