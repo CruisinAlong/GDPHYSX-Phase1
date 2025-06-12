@@ -8,13 +8,14 @@ namespace Physics {
         Physics::Particle* PhysicsParticle;
         ModelLoader* RenderObject;
         Physics::MyVector Color;
+        glm::vec3 Scale;
 
         RenderParticle(Physics::Particle* p, ModelLoader* obj)
             : PhysicsParticle(p), RenderObject(obj), Color(1, 1, 1) {
         }
 
-        RenderParticle(Physics::Particle* p, ModelLoader* obj, Physics::MyVector c)
-            : PhysicsParticle(p), RenderObject(obj), Color(c) {
+        RenderParticle(Physics::Particle* p, ModelLoader* obj, Physics::MyVector c, glm::vec3 scale)
+            : PhysicsParticle(p), RenderObject(obj), Color(c),  Scale(scale){
         }
 
         void Draw(GLuint shaderProgram, float scale, float x_rot);

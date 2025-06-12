@@ -163,6 +163,7 @@ int main(void)
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_real_distribution<float> colorDist(0.0f, 1.0f);
+    std::uniform_real_distribution<float> scaleDist(5.0f, 18.0f);
     std::uniform_real_distribution<float> forceXDist(-10000.0f, 10000.0f);
     std::uniform_real_distribution<float> forceYDist(12000.0f, 18000.0f);
     std::uniform_real_distribution<float> forceZDist(-10000.0f, 10000.0f);
@@ -221,6 +222,7 @@ int main(void)
                 float fy = forceYDist(gen);
                 float fz = forceZDist(gen);
 
+                float scale1 = scaleDist(gen);
                 p->AddForce(Physics::MyVector(fx, fy, fz));
 
                 float r = colorDist(gen);
@@ -228,7 +230,8 @@ int main(void)
                 float b = colorDist(gen);
 
                 world.AddParticle(p);
-                Physics::RenderParticle* rp = new Physics::RenderParticle(p, sphereModel, Physics::MyVector(r, g, b));
+                Physics::RenderParticle* rp = new Physics::RenderParticle(p, sphereModel, Physics::MyVector(r, g, b), glm::vec3(scale1, scale1, scale1));
+                
                 particles.push_back(p);
                 renderParticles.push_back(rp);
             }

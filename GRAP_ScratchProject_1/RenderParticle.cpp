@@ -6,6 +6,7 @@ namespace Physics {
         if (!this->PhysicsParticle->IsDestroyed()) {
             this->RenderObject->Color = (glm::vec3)this->Color;
             this->RenderObject->Position = (glm::vec3)this->PhysicsParticle->Position;
+            this->RenderObject->Scale = (glm::vec3)this->Scale;
             this->RenderObject->Draw(shaderProgram, scale, x_rot);
         }
     }
