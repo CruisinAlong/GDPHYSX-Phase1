@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="ModelLoader.h" />
     <ClInclude Include="OrthoCamera.h" />
+    <ClInclude Include="PerspectiveCamera.h" />
     <ClInclude Include="Physics\DragForceGenerator.h" />
     <ClInclude Include="Physics\ForceGenerator.h" />
     <ClInclude Include="Physics\ForceRegistry.h" />

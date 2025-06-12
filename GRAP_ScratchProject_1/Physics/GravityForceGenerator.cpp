@@ -1,4 +1,5 @@
 #include "GravityForceGenerator.h"
+#include <iostream>
 namespace Physics {
 	void GravityForceGenerator::UpdateForce(Particle* particle, float time)
 	{
