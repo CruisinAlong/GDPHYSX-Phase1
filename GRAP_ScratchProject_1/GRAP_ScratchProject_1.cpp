@@ -38,6 +38,9 @@ float pitch = 0;
 float camSpeed = 1.0f;
 float camLookSpeed = 0.035f;
 
+bool isPaused = false;
+
+
 std::unordered_map<int, bool> keyStates;
 
 bool usePerspective = true;
@@ -52,6 +55,9 @@ void Key_Callback(GLFWwindow* window, int key, int scancode, int action, int mod
             usePerspective = !usePerspective;
             changeCamPressed = true;
         }
+        if (key == GLFW_KEY_SPACE) {
+            isPaused = !isPaused;
+        }
     }
     else if (action == GLFW_RELEASE) {
         keyStates[key] = false;
@@ -60,6 +66,7 @@ void Key_Callback(GLFWwindow* window, int key, int scancode, int action, int mod
         }
     }
 }
+
 
 
 // Set a fixed radius for the orbit
@@ -156,6 +163,13 @@ int main(void)
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_real_distribution<float> colorDist(0.0f, 1.0f);
+    std::uniform_real_distribution<float> forceXDist(-10000.0f, 10000.0f);
+    std::uniform_real_distribution<float> forceYDist(12000.0f, 18000.0f);
+    std::uniform_real_distribution<float> forceZDist(-10000.0f, 10000.0f);
+
+
+    const float fixedDt = 0.016f; // 60Hz
+    float accumulator = 0.0f;
 
     while (!glfwWindowShouldClose(window))
     {
@@ -177,18 +191,15 @@ int main(void)
         glm::mat4 projection;
 
         if (usePerspective) {
-            // Update perspective camera view
             perspectiveCamera->SetView(glm::lookAt(camPos, camTarget, camUp));
             view = perspectiveCamera->GetView();
             projection = perspectiveCamera->GetProjection();
         }
         else {
-            // Update ortho camera view
             orthoCamera->SetView(glm::lookAt(camPos, camTarget, camUp));
             view = orthoCamera->GetView();
             projection = orthoCamera->GetProjection();
         }
-
 
         curr_time = clock::now();
         auto dur = std::chrono::duration_cast<std::chrono::nanoseconds>(curr_time - prev_time);
@@ -197,50 +208,55 @@ int main(void)
         float dt = std::chrono::duration<float>(dur).count();
         spawnTimer += dt;
 
-        // Spawning block
-        while (particles.size() <= particleSpawnCount && spawnTimer >= spawnInterval) {
-            spawnTimer -= spawnInterval;
-            Physics::Particle* p = new Physics::Particle();
-            // Bottom center of the screen
-            p->Position = Physics::MyVector(0.0f, -height / 2.0f + 10.0f, 0.0f);
-            p->mass = 1.0f;
-            p->lifespan = 3.0f; // 5 seconds
+        if (!isPaused) {
+            // Spawning block
+            while (particles.size() <= particleSpawnCount && spawnTimer >= spawnInterval) {
+                spawnTimer -= spawnInterval;
+                Physics::Particle* p = new Physics::Particle();
+                p->Position = Physics::MyVector(0.0f, -height / 2.0f + 10.0f, 0.0f);
+                p->mass = 1.0f;
+                p->lifespan = 3.0f;
 
-            // Stronger random force: x and z in [-300, 300], y in [4000, 6000]
-            float fx = static_cast<float>(rand()) / RAND_MAX * 20000.0f - 10000.0f;
-            float fy = static_cast<float>(rand()) / RAND_MAX * 6000.0f + 12000.0f;
-            float fz = static_cast<float>(rand()) / RAND_MAX * 20000.0f - 10000.0f;
-            p->AddForce(Physics::MyVector(fx, fy, fz));
+                float fx = forceXDist(gen);
+                float fy = forceYDist(gen);
+                float fz = forceZDist(gen);
 
-            float r = colorDist(gen);
-            float g = colorDist(gen);
-            float b = colorDist(gen);
+                p->AddForce(Physics::MyVector(fx, fy, fz));
 
-            world.AddParticle(p);
-            auto* rp = new Physics::RenderParticle(p, sphereModel, Physics::MyVector(r, g, b));
-            particles.push_back(p);
-            renderParticles.push_back(rp);
-        }
+                float r = colorDist(gen);
+                float g = colorDist(gen);
+                float b = colorDist(gen);
 
+                world.AddParticle(p);
+                Physics::RenderParticle* rp = new Physics::RenderParticle(p, sphereModel, Physics::MyVector(r, g, b));
+                particles.push_back(p);
+                renderParticles.push_back(rp);
+            }
 
+            const int maxPhysicsSteps = 5;
+            int steps = 0;
+            accumulator += dt;
+            while (accumulator >= fixedDt && steps < maxPhysicsSteps) {
+                world.Update(fixedDt);
+                accumulator -= fixedDt;
+                steps++;
+            }
+            if (steps == maxPhysicsSteps) {
+                std::cout << "Warning: Physics update took too long, dropping excess time." << std::endl;
+                accumulator = 0; // Drop excess time to prevent spiral of death
+            }
 
-        //Physics Update
-        if (curr_ns >= timeStep) {
-            auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(curr_ns);
-            curr_ns = std::chrono::nanoseconds(0);
-            float dt = static_cast<float>(ms.count()) / 1000.0f;
-            world.Update(dt);
-        }
-
-        // Remove dead particles 
-        for (size_t i = 0; i < particles.size();) {
-            if (particles[i]->IsDestroyed()) {
-                delete renderParticles[i];
-                delete particles[i];
-                renderParticles.erase(renderParticles.begin() + i);
-                particles.erase(particles.begin() + i);
-            } else {
-                ++i;
+            // Remove dead particles 
+            for (size_t i = 0; i < particles.size();) {
+                if (particles[i]->IsDestroyed()) {
+                    delete renderParticles[i];
+                    delete particles[i];
+                    renderParticles.erase(renderParticles.begin() + i);
+                    particles.erase(particles.begin() + i);
+                }
+                else {
+                    ++i;
+                }
             }
         }
 
@@ -251,7 +267,6 @@ int main(void)
         glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
         unsigned int viewLoc = glGetUniformLocation(shaderProgram, "view");
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-
 
         for (auto* rp : renderParticles) {
             rp->Draw(shaderProgram, scale, x_rot);

@@ -19,7 +19,7 @@ namespace Physics {
 		bool isDestroyed = false;
 
 	protected:
-		float damping = 0.9f;
+		float damping = 1.0f;
 		MyVector accumulatedForce = MyVector(0, 0, 0);
 
 	public:

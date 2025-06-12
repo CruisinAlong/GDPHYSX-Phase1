@@ -1,89 +1,93 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "S:\\Repositories\\GDPHYSX-Phase1\\",
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\MyParticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\PerspectiveCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\PerspectiveCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\OrthoCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\OrthoCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\ModelLoader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\ModelLoader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\PhysicsWorld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\MyVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\MyVector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\MyParticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\RenderParticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\RenderParticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Shaders\\sample.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Shaders\\sample.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\MyParticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\ForceRegistry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\ForceRegistry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\ForceGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Dependencies\\include\\GLFW\\glfw3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\MyParticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\MyVector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\DragForceGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\DragForceGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\RenderParticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\ForceRegistry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\PerspectiveCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\PerspectiveCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\OrthoCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\OrthoCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\ModelLoader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\ModelLoader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\PhysicsWorld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\MyVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\RenderParticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Shaders\\sample.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Shaders\\sample.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\ForceRegistry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\ForceGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Dependencies\\include\\GLFW\\glfw3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GRAP_ScratchProject_1\\Dependencies\\include\\GLFW\\glfw3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -98,110 +102,115 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PhysicsWorld.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h",
-              "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h",
-              "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-20T02:56:48.159Z",
+              "DocumentIndex": 6,
+              "Title": "DragForceGenerator.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\DragForceGenerator.cpp",
+              "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\DragForceGenerator.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\DragForceGenerator.cpp",
+              "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\DragForceGenerator.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T23:41:17.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
+              "Title": "PhysicsWorld.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h",
+              "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h",
+              "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\PhysicsWorld.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-20T02:56:48.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MyParticle.cpp",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.cpp",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\MyParticle.cpp",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.cpp",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\MyParticle.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-20T01:23:08.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "MyVector.cpp",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.cpp",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\MyVector.cpp",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.cpp",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\MyVector.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-19T08:43:54.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "MyVector.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.h",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\MyVector.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyVector.h",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\MyVector.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-13T01:49:38.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T01:49:38.988Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "PhysicsWorld.cpp",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.cpp",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\PhysicsWorld.cpp",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\PhysicsWorld.cpp",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\PhysicsWorld.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-20T02:56:37.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T02:56:37.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "ModelLoader.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\ModelLoader.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\ModelLoader.h",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\ModelLoader.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\ModelLoader.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\ModelLoader.h",
               "RelativeToolTip": "GRAP_ScratchProject_1\\ModelLoader.h",
               "ViewState": "AgIAADEAAAAAAAAAAAAuwE0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-20T02:25:56.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T02:25:56.267Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GRAP_ScratchProject_1.cpp",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp",
-              "RelativeToolTip": "GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAADkAAAAgAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp*",
+              "RelativeToolTip": "GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp*",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAQwBQBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-08T02:01:33.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "PerspectiveCamera.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\PerspectiveCamera.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\PerspectiveCamera.h",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\PerspectiveCamera.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\PerspectiveCamera.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\PerspectiveCamera.h",
               "RelativeToolTip": "GRAP_ScratchProject_1\\PerspectiveCamera.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -210,50 +219,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "MyParticle.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.h",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\MyParticle.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.h",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\MyParticle.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-20T01:22:57.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "OrthoCamera.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\OrthoCamera.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\OrthoCamera.h",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\OrthoCamera.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\OrthoCamera.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\OrthoCamera.h",
               "RelativeToolTip": "GRAP_ScratchProject_1\\OrthoCamera.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-20T02:25:58.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T02:25:58.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "RenderParticle.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.h",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\RenderParticle.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.h",
               "RelativeToolTip": "GRAP_ScratchProject_1\\RenderParticle.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-26T11:42:57.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T11:42:57.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "RenderParticle.cpp",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.cpp",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\RenderParticle.cpp",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\RenderParticle.cpp",
               "RelativeToolTip": "GRAP_ScratchProject_1\\RenderParticle.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -262,49 +269,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "sample.frag",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.frag",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.frag",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Shaders\\sample.frag",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.frag",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.frag",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Shaders\\sample.frag",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-01-22T01:18:58.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T01:18:58.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "sample.vert",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.vert",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.vert",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Shaders\\sample.vert",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.vert",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Shaders\\sample.vert",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Shaders\\sample.vert",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-01-22T01:18:47.009Z",
+              "WhenOpened": "2025-01-22T01:18:47.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ForceGenerator.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp",
+              "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp",
+              "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-27T02:14:28.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ForceGenerator.cpp",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp",
-              "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp",
-              "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\ForceGenerator.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-27T02:14:28.557Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "ForceGenerator.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.h",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\ForceGenerator.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceGenerator.h",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\ForceGenerator.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -312,23 +318,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 8,
               "Title": "ForceRegistry.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.h",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\ForceRegistry.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.h",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\ForceRegistry.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-27T02:21:18.354Z"
+              "WhenOpened": "2025-05-27T02:21:18.354Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "ForceRegistry.cpp",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.cpp",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\ForceRegistry.cpp",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\ForceRegistry.cpp",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\ForceRegistry.cpp",
               "ViewState": "AgIAAAEAAAAAAAAAAAAUwBUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -336,23 +343,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "GravityForceGenerator.cpp",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.cpp",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.cpp",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.cpp",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-27T02:39:57.373Z"
+              "WhenOpened": "2025-05-27T02:39:57.373Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "GravityForceGenerator.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.h",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.h",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\GravityForceGenerator.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -360,11 +368,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "glfw3.h",
-              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Dependencies\\include\\GLFW\\glfw3.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Dependencies\\include\\GLFW\\glfw3.h",
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Dependencies\\include\\GLFW\\glfw3.h",
-              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Dependencies\\include\\GLFW\\glfw3.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Dependencies\\include\\GLFW\\glfw3.h",
               "RelativeToolTip": "GRAP_ScratchProject_1\\Dependencies\\include\\GLFW\\glfw3.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
