@@ -111,7 +111,7 @@ int main(void)
     float farPlane = 5000.0f;
 
     perspectiveCamera = new PerspectiveCamera(fov, aspect, nearPlane, farPlane);
-    orthoCamera = new OrthoCamera(width, height, nearPlane, 10000);
+    orthoCamera = new OrthoCamera(width, height, -10000, 10000);
 
 
     x_cam = 0.0f;
@@ -185,8 +185,8 @@ int main(void)
 
         glm::vec3 camPos(x, y, z);
         glm::vec3 camTarget(0.0f, 0.0f, 0.0f); // Always look at the center
+        glm::vec3 camTarget2(0.0f, 300.0f, 0.0f); 
         glm::vec3 camUp(0.0f, 1.0f, 0.0f);
-
         glm::mat4 view;
         glm::mat4 projection;
 
@@ -196,7 +196,7 @@ int main(void)
             projection = perspectiveCamera->GetProjection();
         }
         else {
-            orthoCamera->SetView(glm::lookAt(camPos, camTarget, camUp));
+            orthoCamera->SetView(glm::lookAt(camPos, camTarget2, camUp));
             view = orthoCamera->GetView();
             projection = orthoCamera->GetProjection();
         }
