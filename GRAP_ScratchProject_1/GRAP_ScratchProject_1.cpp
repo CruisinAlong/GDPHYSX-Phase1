@@ -36,7 +36,7 @@ float yaw = 270;
 float pitch = 0;
 
 float camSpeed = 1.0f;
-float camLookSpeed = 0.035f;
+float camLookSpeed = 0.05f;
 
 // Pause state for simulation
 bool isPaused = false;
@@ -94,6 +94,8 @@ void ProcessInput() {
     if (pitch < -89.0f) pitch = -89.0f;
 
 }
+
+bool wasPaused = false;
 
 int main(void)
 {
@@ -165,7 +167,7 @@ int main(void)
     std::chrono::nanoseconds curr_ns(0);
 
     // Particle spawn setup
-    float spawnInterval = 0.1f; 
+    float spawnInterval = 0.01f;
     float spawnTimer = 0.0f;
 
     // Random generators for particle attributes
@@ -177,7 +179,7 @@ int main(void)
     std::uniform_real_distribution<float> forceYDist(12000.0f, 18000.0f);
     std::uniform_real_distribution<float> forceZDist(-10000.0f, 10000.0f);
 
-	// Ask user for number of particles to spawn
+    // Ask user for number of particles to spawn
     int particleSpawnCount;
     std::cout << "Enter number of particles: ";
     std::cin >> particleSpawnCount;
@@ -199,7 +201,7 @@ int main(void)
 
         glm::vec3 camPos(x, y, z);
         glm::vec3 camTarget(0.0f, 0.0f, 0.0f); // Always look at the center
-        glm::vec3 camTarget2(0.0f, 300.0f, 0.0f); 
+        glm::vec3 camTarget2(0.0f, 300.0f, 0.0f);
         glm::vec3 camUp(0.0f, 1.0f, 0.0f);
         glm::mat4 view;
         glm::mat4 projection;
@@ -216,67 +218,84 @@ int main(void)
             projection = orthoCamera->GetProjection();
         }
 
-        // Timing for physics
-        curr_time = clock::now();
-        auto dur = std::chrono::duration_cast<std::chrono::nanoseconds>(curr_time - prev_time);
-        prev_time = curr_time;
-        curr_ns += dur;
-        float dt = std::chrono::duration<float>(dur).count();
-        spawnTimer += dt;
+        // pause reset logic
+        if (isPaused && !wasPaused) {
+            wasPaused = true;
+        }
+        else if (!isPaused && wasPaused) {
+            spawnTimer = 0.0f;
+            accumulator = 0.0f;
+            curr_ns = std::chrono::nanoseconds(0);
+            prev_time = clock::now();
+            wasPaused = false;
+        }
+
 
         if (!isPaused) {
-            // Particle spawning logic
-            while (particles.size() <= particleSpawnCount && spawnTimer >= spawnInterval) {
-                spawnTimer -= spawnInterval;
-                Physics::Particle* p = new Physics::Particle();
-                p->Position = Physics::MyVector(0.0f, -height / 2.0f + 10.0f, 0.0f);
-                p->mass = 1.0f;
-                p->lifespan = 3.0f;
 
-                float fx = forceXDist(gen);
-                float fy = forceYDist(gen);
-                float fz = forceZDist(gen);
+            // Timing for physics
+            curr_time = clock::now();
+            auto dur = std::chrono::duration_cast<std::chrono::nanoseconds>(curr_time - prev_time);
+            prev_time = curr_time;
+            curr_ns += dur;
+            float dt = std::chrono::duration<float>(dur).count();
 
-                float scale1 = scaleDist(gen);
+            spawnTimer += dt;
 
-                // Apply random force
-                p->AddForce(Physics::MyVector(fx, fy, fz));
+            if (curr_ns >= timeStep) {
+                // Particle spawning logic
+                while (particles.size() <= particleSpawnCount && spawnTimer >= spawnInterval) {
+                    spawnTimer -= spawnInterval;
+                    Physics::Particle* p = new Physics::Particle();
+                    p->Position = Physics::MyVector(0.0f, -height / 2.0f + 10.0f, 0.0f);
+                    p->mass = 1.0f;
+                    p->lifespan = 3.0f;
 
-                float r = colorDist(gen);
-                float g = colorDist(gen);
-                float b = colorDist(gen);
+                    float fx = forceXDist(gen);
+                    float fy = forceYDist(gen);
+                    float fz = forceZDist(gen);
 
-                world.AddParticle(p);
-                Physics::RenderParticle* rp = new Physics::RenderParticle(p, sphereModel, Physics::MyVector(r, g, b), glm::vec3(scale1, scale1, scale1));
-                
-                particles.push_back(p);
-                renderParticles.push_back(rp);
-            }
+                    float scale1 = scaleDist(gen);
 
-            // Physics update loop
-            const int maxPhysicsSteps = 5;
-            int steps = 0;
-            accumulator += dt;
-            while (accumulator >= fixedDt && steps < maxPhysicsSteps) {
-                world.Update(fixedDt);
-                accumulator -= fixedDt;
-                steps++;
-            }
-            if (steps == maxPhysicsSteps) {
-                std::cout << "Warning: Physics update took too long, dropping excess time." << std::endl;
-                accumulator = 0; // Drop excess time to prevent spiral of death
-            }
+                    // Apply random force
+                    p->AddForce(Physics::MyVector(fx, fy, fz));
 
-            // Remove dead particles 
-            for (size_t i = 0; i < particles.size();) {
-                if (particles[i]->IsDestroyed()) {
-                    delete renderParticles[i];
-                    delete particles[i];
-                    renderParticles.erase(renderParticles.begin() + i);
-                    particles.erase(particles.begin() + i);
+                    float r = colorDist(gen);
+                    float g = colorDist(gen);
+                    float b = colorDist(gen);
+
+                    world.AddParticle(p);
+                    Physics::RenderParticle* rp = new Physics::RenderParticle(p, sphereModel, Physics::MyVector(r, g, b), glm::vec3(scale1, scale1, scale1));
+
+                    particles.push_back(p);
+                    renderParticles.push_back(rp);
                 }
-                else {
-                    ++i;
+
+                // Physics update loop
+                const int maxPhysicsSteps = 5;
+                int steps = 0;
+                accumulator += dt;
+                while (accumulator >= fixedDt && steps < maxPhysicsSteps) {
+                    world.Update(fixedDt);
+                    accumulator -= fixedDt;
+                    steps++;
+                }
+                if (steps == maxPhysicsSteps) {
+                    std::cout << "Warning: Physics update took too long, dropping excess time." << std::endl;
+                    accumulator = 0; // Drop excess time to prevent spiral of death
+                }
+
+                // Remove dead particles 
+                for (size_t i = 0; i < particles.size();) {
+                    if (particles[i]->IsDestroyed()) {
+                        delete renderParticles[i];
+                        delete particles[i];
+                        renderParticles.erase(renderParticles.begin() + i);
+                        particles.erase(particles.begin() + i);
+                    }
+                    else {
+                        ++i;
+                    }
                 }
             }
         }
