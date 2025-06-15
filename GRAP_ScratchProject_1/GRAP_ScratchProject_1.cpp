@@ -38,25 +38,37 @@ float pitch = 0;
 float camSpeed = 1.0f;
 float camLookSpeed = 0.035f;
 
+// Pause state for simulation
 bool isPaused = false;
 
-
+// Track pressed keys
 std::unordered_map<int, bool> keyStates;
 
+// Switch between camera modes
 bool usePerspective = true;
+
+// Prevent camera toggling on key hold
 bool changeCamPressed = false;
+
+// Pointers for cameras
 PerspectiveCamera* perspectiveCamera = nullptr;
 OrthoCamera* orthoCamera = nullptr;
 
 void Key_Callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
     if (action == GLFW_PRESS) {
         keyStates[key] = true;
-        if (key == GLFW_KEY_E && !changeCamPressed) {
-            usePerspective = !usePerspective;
-            changeCamPressed = true;
-        }
         if (key == GLFW_KEY_SPACE) {
             isPaused = !isPaused;
+        }
+        if (key == GLFW_KEY_1 && usePerspective)
+        {
+            usePerspective = false;
+            changeCamPressed = true;
+        }
+        if (key == GLFW_KEY_2 && !usePerspective)
+        {
+            usePerspective = true;
+            changeCamPressed = true;
         }
     }
     else if (action == GLFW_RELEASE) {
@@ -66,8 +78,6 @@ void Key_Callback(GLFWwindow* window, int key, int scancode, int action, int mod
         }
     }
 }
-
-
 
 // Set a fixed radius for the orbit
 float camRadius = 1000.0f;
@@ -85,7 +95,6 @@ void ProcessInput() {
 
 }
 
-
 int main(void)
 {
     GLFWwindow* window;
@@ -95,7 +104,7 @@ int main(void)
     int width = 800;
     int height = 800;
 
-    window = glfwCreateWindow(width, height, "Particle Spawn Test", NULL, NULL);
+    window = glfwCreateWindow(width, height, "GDPHYSX Phase 1 - Group 1", NULL, NULL);
     if (!window) {
         glfwTerminate();
         return -1;
@@ -105,6 +114,7 @@ int main(void)
     gladLoadGL();
     glEnable(GL_DEPTH_TEST);
 
+    // Camera setup
     float fov = 60.0f;
     float aspect = static_cast<float>(width) / static_cast<float>(height);
     float nearPlane = 0.1f;
@@ -112,7 +122,6 @@ int main(void)
 
     perspectiveCamera = new PerspectiveCamera(fov, aspect, nearPlane, farPlane);
     orthoCamera = new OrthoCamera(width, height, -10000, 10000);
-
 
     x_cam = 0.0f;
     y_cam = 0.0f;
@@ -123,6 +132,7 @@ int main(void)
     glViewport(0, 0, width, height);
     glfwSetKeyCallback(window, Key_Callback);
 
+    // Loading shaders
     std::fstream vertSrc("Shaders/sample.vert");
     std::stringstream vertBuff; vertBuff << vertSrc.rdbuf();
     std::string vertS = vertBuff.str(); const char* vert = vertS.c_str();
@@ -145,6 +155,7 @@ int main(void)
         std::cerr << "Failed to load model!" << std::endl; return -1;
     }
 
+    // Initialize physics world and particles
     Physics::PhysicsWorld world;
     std::vector<Physics::Particle*> particles;
     std::vector<Physics::RenderParticle*> renderParticles;
@@ -153,13 +164,11 @@ int main(void)
     auto curr_time = clock::now(), prev_time = curr_time;
     std::chrono::nanoseconds curr_ns(0);
 
-    // For spawn timing
+    // Particle spawn setup
     float spawnInterval = 0.1f; 
     float spawnTimer = 0.0f;
 
-	// Number of particles to spawn 
-    int particleSpawnCount = 1000;
-
+    // Random generators for particle attributes
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_real_distribution<float> colorDist(0.0f, 1.0f);
@@ -168,6 +177,10 @@ int main(void)
     std::uniform_real_distribution<float> forceYDist(12000.0f, 18000.0f);
     std::uniform_real_distribution<float> forceZDist(-10000.0f, 10000.0f);
 
+	// Ask user for number of particles to spawn
+    int particleSpawnCount;
+    std::cout << "Enter number of particles: ";
+    std::cin >> particleSpawnCount;
 
     const float fixedDt = 0.016f; // 60Hz
     float accumulator = 0.0f;
@@ -191,6 +204,7 @@ int main(void)
         glm::mat4 view;
         glm::mat4 projection;
 
+        // Switching cameras
         if (usePerspective) {
             perspectiveCamera->SetView(glm::lookAt(camPos, camTarget, camUp));
             view = perspectiveCamera->GetView();
@@ -202,6 +216,7 @@ int main(void)
             projection = orthoCamera->GetProjection();
         }
 
+        // Timing for physics
         curr_time = clock::now();
         auto dur = std::chrono::duration_cast<std::chrono::nanoseconds>(curr_time - prev_time);
         prev_time = curr_time;
@@ -210,7 +225,7 @@ int main(void)
         spawnTimer += dt;
 
         if (!isPaused) {
-            // Spawning block
+            // Particle spawning logic
             while (particles.size() <= particleSpawnCount && spawnTimer >= spawnInterval) {
                 spawnTimer -= spawnInterval;
                 Physics::Particle* p = new Physics::Particle();
@@ -223,6 +238,8 @@ int main(void)
                 float fz = forceZDist(gen);
 
                 float scale1 = scaleDist(gen);
+
+                // Apply random force
                 p->AddForce(Physics::MyVector(fx, fy, fz));
 
                 float r = colorDist(gen);
@@ -236,6 +253,7 @@ int main(void)
                 renderParticles.push_back(rp);
             }
 
+            // Physics update loop
             const int maxPhysicsSteps = 5;
             int steps = 0;
             accumulator += dt;
@@ -271,6 +289,7 @@ int main(void)
         unsigned int viewLoc = glGetUniformLocation(shaderProgram, "view");
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 
+        //Draw all particles
         for (auto* rp : renderParticles) {
             rp->Draw(shaderProgram, scale, x_rot);
         }
@@ -279,6 +298,7 @@ int main(void)
         glfwPollEvents();
     }
 
+    // Cleanup
     for (Physics::RenderParticle* rp : renderParticles) delete rp;
     for (Physics::Particle* p : particles) delete p;
     delete sphereModel;
