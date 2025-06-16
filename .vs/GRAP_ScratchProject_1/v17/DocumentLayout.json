@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\MyParticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26B85E33-4AE2-491E-95AD-8C6809554E54}|GRAP_ScratchProject_1\\GRAP_ScratchProject_1.vcxproj|solutionrelative:GRAP_ScratchProject_1\\Physics\\MyParticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyParticle.cpp",
+              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.cpp",
+              "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\MyParticle.cpp",
+              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.cpp",
+              "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\MyParticle.cpp",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-16T07:40:52.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyParticle.h",
+              "DocumentMoniker": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.h",
+              "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\Physics\\MyParticle.h",
+              "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\Physics\\MyParticle.h",
+              "RelativeToolTip": "GRAP_ScratchProject_1\\Physics\\MyParticle.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-16T07:40:25.164Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -44,7 +78,7 @@
               "RelativeDocumentMoniker": "GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp",
               "ToolTip": "S:\\Repositories\\GDPHYSX-Phase1\\GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp",
               "RelativeToolTip": "GRAP_ScratchProject_1\\GRAP_ScratchProject_1.cpp",
-              "ViewState": "AgIAACMBAAAAAAAAAAAQwDYBAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAAwCEBAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-08T02:01:33.709Z",
               "EditorCaption": ""

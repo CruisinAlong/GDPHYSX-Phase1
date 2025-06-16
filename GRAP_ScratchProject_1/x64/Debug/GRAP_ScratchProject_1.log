@@ -1,15 +1,1 @@
-﻿  DragForceGenerator.cpp
-  ForceGenerator.cpp
-  GRAP_ScratchProject_1.cpp
-S:\Repositories\GDPHYSX-Phase1\GRAP_ScratchProject_1\GRAP_ScratchProject_1.cpp(126,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-S:\Repositories\GDPHYSX-Phase1\GRAP_ScratchProject_1\GRAP_ScratchProject_1.cpp(126,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  ForceRegistry.cpp
-  GravityForceGenerator.cpp
-  MyParticle.cpp
-  MyVector.cpp
-  PhysicsWorld.cpp
-  RenderParticle.cpp
-  Generating Code...
-  glad.c
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  GRAP_ScratchProject_1.vcxproj -> S:\Repositories\GDPHYSX-Phase1\x64\Debug\GRAP_ScratchProject_1.exe
+﻿  GRAP_ScratchProject_1.vcxproj -> S:\Repositories\GDPHYSX-Phase1\x64\Debug\GRAP_ScratchProject_1.exe

@@ -36,10 +36,11 @@ float yaw = 270;
 float pitch = 0;
 
 float camSpeed = 1.0f;
-float camLookSpeed = 0.05f;
+float camLookSpeed = 0.035f;
 
 // Pause state for simulation
-bool isPaused = false;
+bool isPaused = true;
+bool wasPaused = false;
 
 // Track pressed keys
 std::unordered_map<int, bool> keyStates;
@@ -94,8 +95,6 @@ void ProcessInput() {
     if (pitch < -89.0f) pitch = -89.0f;
 
 }
-
-bool wasPaused = false;
 
 int main(void)
 {
@@ -183,6 +182,7 @@ int main(void)
     int particleSpawnCount;
     std::cout << "Enter number of particles: ";
     std::cin >> particleSpawnCount;
+    isPaused = false; // Start in paused state   
 
     const float fixedDt = 0.016f; // 60Hz
     float accumulator = 0.0f;
@@ -218,7 +218,7 @@ int main(void)
             projection = orthoCamera->GetProjection();
         }
 
-        // pause reset logic
+        /*/// pause reset logic
         if (isPaused && !wasPaused) {
             wasPaused = true;
         }
@@ -228,28 +228,25 @@ int main(void)
             curr_ns = std::chrono::nanoseconds(0);
             prev_time = clock::now();
             wasPaused = false;
-        }
-
+        }*/
 
         if (!isPaused) {
-
             // Timing for physics
             curr_time = clock::now();
             auto dur = std::chrono::duration_cast<std::chrono::nanoseconds>(curr_time - prev_time);
             prev_time = curr_time;
             curr_ns += dur;
             float dt = std::chrono::duration<float>(dur).count();
-
             spawnTimer += dt;
 
-            if (curr_ns >= timeStep) {
+            if (!isPaused) {
                 // Particle spawning logic
-                while (particles.size() <= particleSpawnCount && spawnTimer >= spawnInterval) {
+                if (particles.size() <= particleSpawnCount && spawnTimer >= spawnInterval) {
                     spawnTimer -= spawnInterval;
                     Physics::Particle* p = new Physics::Particle();
                     p->Position = Physics::MyVector(0.0f, -height / 2.0f + 10.0f, 0.0f);
                     p->mass = 1.0f;
-                    p->lifespan = 3.0f;
+                    p->lifespan = 5.0f;
 
                     float fx = forceXDist(gen);
                     float fy = forceYDist(gen);
@@ -288,8 +285,9 @@ int main(void)
                 // Remove dead particles 
                 for (size_t i = 0; i < particles.size();) {
                     if (particles[i]->IsDestroyed()) {
-                        delete renderParticles[i];
-                        delete particles[i];
+                        particles[i]->ResetForce();
+                        //delete renderParticles[i];
+                        //delete particles[i];
                         renderParticles.erase(renderParticles.begin() + i);
                         particles.erase(particles.begin() + i);
                     }
@@ -298,6 +296,7 @@ int main(void)
                     }
                 }
             }
+
         }
 
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
