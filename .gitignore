@@ -978,7 +978,6 @@ _deps
 *.lib
 
 # Executables
-*.exe
 *.out
 *.app
 
