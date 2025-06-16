@@ -142,7 +142,7 @@
     <ClCompile Include="Physics\DragForceGenerator.cpp" />
     <ClCompile Include="Physics\ForceGenerator.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="GRAP_ScratchProject_1.cpp" />
+    <ClCompile Include="GDPHYSX-Phase1.cpp" />
     <ClCompile Include="Physics\ForceRegistry.cpp" />
     <ClCompile Include="Physics\GravityForceGenerator.cpp" />
     <ClCompile Include="Physics\MyParticle.cpp" />
