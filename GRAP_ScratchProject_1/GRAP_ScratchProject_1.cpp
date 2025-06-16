@@ -166,12 +166,13 @@ int main(void)
     std::chrono::nanoseconds curr_ns(0);
 
     // Particle spawn setup
-    float spawnInterval = 0.01f;
+    float spawnInterval = 0.03f;
     float spawnTimer = 0.0f;
 
     // Random generators for particle attributes
     std::random_device rd;
     std::mt19937 gen(rd());
+    std::uniform_real_distribution<float> lifeDist(1.0f, 10.0f);
     std::uniform_real_distribution<float> colorDist(0.0f, 1.0f);
     std::uniform_real_distribution<float> scaleDist(5.0f, 18.0f);
     std::uniform_real_distribution<float> forceXDist(-10000.0f, 10000.0f);
@@ -246,7 +247,7 @@ int main(void)
                     Physics::Particle* p = new Physics::Particle();
                     p->Position = Physics::MyVector(0.0f, -height / 2.0f + 10.0f, 0.0f);
                     p->mass = 1.0f;
-                    p->lifespan = 5.0f;
+                    p->lifespan = lifeDist(gen);
 
                     float fx = forceXDist(gen);
                     float fy = forceYDist(gen);
