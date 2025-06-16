@@ -17,6 +17,7 @@ public:
     size_t indexCount = 0;
     glm::vec3 Position;
     glm::vec3 Color;
+    glm::vec3 Scale;
 
     // Loads the OBJ file, creates VAO/VBO/EBO, and returns the number of indices
     static bool LoadObjAndSetupBuffers(
@@ -78,7 +79,8 @@ public:
         glm::mat4 transform = glm::mat4(1.0f);
         transform = glm::translate(transform, Position);
         transform = glm::rotate(transform, glm::radians(x_rot), glm::vec3(1.0f, 0.0f, 0.0f));
-        transform = glm::scale(transform, glm::vec3(scale, scale, scale));
+        //transform = glm::scale(transform, glm::vec3(scale, scale, scale));
+        transform = glm::scale(transform, Scale);
         if (shaderProgram) {
             unsigned int transformLoc = glGetUniformLocation(shaderProgram, "transform");
             glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));

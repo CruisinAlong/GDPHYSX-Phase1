@@ -88,4 +88,7 @@
     <CopyFileToFolders Include="Shaders\sample.frag" />
     <CopyFileToFolders Include="Shaders\sample.vert" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+  </ItemGroup>
 </Project>
